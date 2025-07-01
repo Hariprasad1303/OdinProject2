@@ -1,13 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>A JavaScript project</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OdinProject2</title>
   <link rel="stylesheet" href="style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>A JavaScript project</h1>
-  <div id="app"></div>
-  <script src="main.js"></script>
+  <div class="dashboard">
+    <!-- sidebar section starts here -->
+    <div class="sidebar">
+      <!-- logo section starts here -->
+      <div class="logo-section">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <title>view-dashboard</title>
+                    <path d="M13,3V9H21V3M13,21H21V11H13M3,21H11V15H3M3,13H11V3H3V13Z" fill="white"/>
+              </svg>
+              <h1>dashboard</h1>
+      </div>
+      <!-- logo section ends here -->
+
+      <!-- Home section starts here -->
+      <div class="home-section">
+          <div class="row">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="settings">
+                  <title>home</title>
+                  <path d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z" fill="white"/>
+              </svg>
+              <h2>Settings</h2>
+          </div>
+          <div class="row">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16" class="settings">
+                    <title>profile</title>
+                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM2 14s1-1 6-1 6 1 6 1-1 3-6 3-6-3-6-3z" fill="white"/>
+              </svg>
+              <h2>Profile</h2>
+          </div>
+          <div class="row">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="settings">
+                <title>message</title>
+                <path d="M20,2H4A2,2 0 0,0 2,4V22L6,18H20A2,2 0 0,0 22,16V4C22,2.89 21.1,2 20,2Z" fill="white" />
+              </svg>
+              <h2>Messages</h2>
+          </div>
+          <div class="row">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="settings">
+                <title>history</title>
+                <path d="M13.5,8H12V13L16.28,15.54L17,14.33L13.5,12.25V8M13,3A9,9 0 0,0 4,12H1L4.96,16.03L9,12H6A7,7 0 0,1 13,5A7,7 0 0,1 20,12A7,7 0 0,1 13,19C11.07,19 9.32,18.21 8.06,16.94L6.64,18.36C8.27,20 10.5,21 13,21A9,9 0 0,0 22,12A9,9 0 0,0 13,3" fill="white"/>
+              </svg>
+              <h2>History</h2>
+          </div>
+          <div class="row">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="settings">
+                <title>Tasks</title>
+                <path fill="white" d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zm0 16H5V5h14zm-9-4h6v2H10zm0-4h8v2h-8zm0-4h8v2h-8z"/>
+                <rect x="6" y="7" width="2" height="2" fill="white"/>
+                <rect x="6" y="11" width="2" height="2" fill="white"/>
+                <rect x="6" y="15" width="2" height="2" fill="white"/>
+              </svg>
+              <h2>Tasks</h2>
+          </div>
+          <div class="row">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="settings">
+                  <title>google-circles-communities</title>
+                  <path fill="white" d="M15,12C13.89,12 13,12.89 13,14A2,2 0 0,0 15,16A2,2 0 0,0 17,14C17,12.89 16.1,12 15,12M12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M14,9C14,7.89 13.1,7 12,7C10.89,7 10,7.89 10,9A2,2 0 0,0 12,11A2,2 0 0,0 14,9M9,12A2,2 0 0,0 7,14A2,2 0 0,0 9,16A2,2 0 0,0 11,14C11,12.89 10.1,12 9,12Z"/>
+              </svg>
+              <h2>Community</h2>  
+          </div>
+      </div>
+      <!-- Home section ends here -->
+
+      <!-- settings sections starts here -->
+      <div class="setting-section">
+        <div class="row">
+
+        </div>
+        <div class="row">
+
+        </div>
+        <div class="row">
+
+        </div>
+      </div>
+      <!-- settings sections ends here -->
+    </div>
+    <!-- sidebar section ends here -->
+    <div class="navbar">main</div>
+    <div class="main">main</div>
+  </div>
 </body>
 </html>
