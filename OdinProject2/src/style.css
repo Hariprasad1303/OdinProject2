@@ -22,9 +22,9 @@
     justify-content:start;
 }
 .logo-section svg{
-    height: 60px;
-    width: 60px;
-    margin: 20px;
+    height: 50px;
+    width: 50px;
+    margin: 10px;
 }
 .logo-section h1{
     color: white;
@@ -32,11 +32,20 @@
     font-weight: 600;
     font-size: 30px;
 }
+.setting-section{
+    margin: 30px;
+}
 .row{
     display:flex;
     align-items: center;
-    justify-content:space-between;
-    width:60%;
+    justify-content:flex-start;
+    margin: 20px;
+}
+.row h2{
+    color: white;
+    font-size: 24px;
+    font-weight: 400;
+    margin-left: 20px;
 }
 .settings{
     height: 24px;
